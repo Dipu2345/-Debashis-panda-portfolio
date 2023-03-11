@@ -10,7 +10,10 @@
     <script src="https://kit.fontawesome.com/00a41f3378.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="loading()">
+    <div id="pre-loder">
+
+    </div>
     <div class="header">
 
         <div class="container">
@@ -197,6 +200,12 @@
                 })
                 .catch(error => console.error('Error!', error.message))
         })
+    </script>
+    <script>
+        let load=document.getElementById("pre-loder");
+        function loading(){
+            load.style.display="none";
+        }
     </script>
 </body>
 
