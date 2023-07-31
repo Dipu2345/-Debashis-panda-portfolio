@@ -2,19 +2,180 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>updating soon</title>
-    <style>
-     div{
-        width: 100%;
-        height: 100vh;
-        background-size: cover;
-        background: black url(../images/update-beat.gif) no-repeat center;
-     }
-    </style>
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/00a41f3378.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <style>
+      
+        *{
+            margin: 0;
+            padding: 0;
+            /* background-color: rgb(160, 153, 153); */
+            
+            
+        }
+        /* body{
+            background-image: url(../images/i.webp);
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+        } */
+            body{
+                background-color: #343b9c46;
+            }
+      
+        .main{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .con{
+            width: 250px;
+            height: 300px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            flex-wrap: wrap;
+            margin: 0px 20px;
+            /* border-radius: 10px; */
+             position: relative;
+             overflow: hidden;
+             border-radius: 20px;
+             margin-bottom: 20px;
+            
+
+        }
+        .con img{
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+            transition: transform 0.5s;
+        }
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#f4034f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     flex-direction: column;
+   transition: height 0.5s;
+    text-align: center;
+}
+.layer h3{
+    font-weight: 500;
+ margin-bottom: 20px; 
+}
+.ck{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    text-align: center;
+    background: #fff;
+  
+}
+.con:hover img{
+    transform: scale(1.1);
+}
+.con:hover .layer{
+    height: 100%;
+    
+}
+.ck{
+    background-color: #fff;
+} 
+h3{
+    color: white;
+    font-weight: 700;
+}
+p{
+    color: white;
+}
+.sub-titlee{
+            text-align: center;
+            text-shadow: -4px 0px 6px rgba(36, 36, 255, 1);
+            text-transform: uppercase;
+            text-decoration: dotted;
+           
+            margin-top: 20px;
+            padding-bottom: 20px;
+        }
+        @media only screen and (max-width :600px) {
+            .con{
+                 align-items: center;
+                 justify-content: center;
+                 margin: 10px 20px;
+            }
+            .main{
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+    </style> 
+     <script src="https://kit.fontawesome.com/00a41f3378.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div ></div>
+<h1 class="sub-titlee">My Work</h1>
+<div class="main">
+    <div class="con">
+        <img src="./superbike logo.jpg" alt="">
+                    <div class="layer">
+                        <h3>indian superbikes</h3>
+                        <p>All indian Superbike
+                            information are here </p>
+                        <a class="ck"href="update.html"><i class="fas fa-link"></i></a>
+                    </div>
+    </div>
+    <div class="con">
+        <img src="./word-counter.jpg" alt="">
+        <div class="layer">
+            <h3>Word Charecter Counter</h3>
+            <p>Made a Word Character Counter
+                using HTML,CSS,JavaScript </p>
+            <a class="ck" href="https://github.com/Dipu2345/word-charecter-counter.git"><i class="fas fa-link"></i></a>
+        </div>
+    </div>
+    <div class="con">
+        <img src="./temp converter.jpg" alt="">
+        <div class="layer">
+            <h3>Temprature Converter</h3>
+            <p>Temprature Converter can
+                convert celcius into
+                Fahrenheit</p>
+            <a class="ck"href="https://github.com/Dipu2345/temperature-converter.git"><i class="fa-solid fa-link"></i></a>
+        </div>
+    </div>
+    <div class="con">
+        <img src="../images/ecomgif.webp" alt="">
+        <div class="layer">
+            <h3>E_commerce Website</h3>
+            <p>Online Watch Shooping website using PHP</p>
+            <a class="ck" href="https://github.com/Dipu2345/e-commerce.git"><i class="fa-solid fa-link"></i></a>
+        </div>
+    </div>
+    <div class="con">
+        <img src="../images/ecomgif.webp" alt="">
+        <div class="layer">
+            <h3>E_commerce Website</h3>
+            <p>Online Watch Shooping website using PHP</p>
+            <a class="ck" href="https://github.com/Dipu2345/.git"><i class="fa-solid fa-link"></i></a>
+        </div>
+    </div>
+   
+</div>
 </body>
 </html>
