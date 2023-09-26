@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Debashis panda</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <script src="https://kit.fontawesome.com/00a41f3378.js" crossorigin="anonymous"></script>
 </head>
 
@@ -18,7 +19,7 @@
     </div>
     <div class="header">
 
-        <div class="container">
+        <div class="container" data-aos="zoom-out">
             <nav>
                 <p class ="portfolio-text">PORTFO<span class="portfolio-text">LIO</span></p>
                 <ul id="sidemenu">
@@ -32,7 +33,7 @@
                 <i class="fas fa-bars" onclick="openmenu()"></i>
 
             </nav>
-            <div class="header-text">
+            <div class="header-text" data-aos="zoom-in">
                 <p>FullStack Web Devloper</p>
                 <h1>Hi, I'm <span> Debashis</span><br> Panda From INDIA</h1>
             </div>
@@ -44,27 +45,27 @@
                 <div class="about-col-1">
                     <img src="../images.jpg" alt="">
                 </div>
-                <div class="about-col-2">
+                <div class="about-col-2" data-aos="fade-left ">
                     <h1 class="sub-title">About me</h1>
                     <p>I am a Fullstack web devloper , I can provide clean code and 
                         pixel perfect design I also make the website more and more interactive
                         with web animation ,I can provide clean code and pixel perfect design
                         A responsive design makes your website acessable to all users regardless
                         of their device..</p>                   
-                    <div class="tab-titles">
+                    <div class="tab-titles" data-aos="fade-down">
                         <p class="tab-links active-link">Skills</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents active-tab" id="skills" data-aos="fade-down">
                         <ul>
                             <li><span>Web Devlopment</span><br>Designing web interfaces</li>
-                            <li><span>UI Designer</span><br>Devlop User Interface  </li>
-                            <li><span>Technical skills</span><br>JAVA,HTML,CSS,JavaScript,SQL,PHP</li>
+                            <li><span>FullStack Development</span><br>Develop client and Server side  </li>
+                            <li><span>Technical skills</span><br>JAVA,J2EE,Servlet,HTML,CSS,JavaScript,SQL,PHP,React js</li>
                         </ul>
                     </div>
-                    <div class="tab-titles">
+                    <div class="tab-titles" data-aos="fade-down">
                         <p class="tab-links active-link">Education</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents active-tab" id="skills" data-aos="fade-down">
                         <ul>
                             <li><span>2023</span><br>MCA From TACT Bhubaneswar</li>
                             <li><span>2021</span><br>BSC Under Utkal University,Bhubaneswar</li>
@@ -75,11 +76,11 @@
         </div>
     </div>
     <!---------services           -------------------------------------->
-    <div id="services">
+    <div id="services" >
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
-                <div>
+                <div data-aos="fade-right">
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
                     <p>The term "web Design" is normally used to describe
@@ -88,7 +89,7 @@
                     </p>
                     <a href="update.html">LearnMore</a>
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <i class="fa-sharp fa-solid fa-crop"></i>
                     <h2>FullStack Web Devlopment</h2>
                     <p>FullStack web Devlopment is a sought after career option today
@@ -103,10 +104,10 @@
         </div>
     </div>
     <!------Portfolio    --------->
-    <div id="portfolio">
+    <div id="portfolio" data-aos="fade-in">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
+            <div class="work-list" data-aos="zoom-in">
                 <div class="work">
                     <img src="./superbike logo.jpg" alt="">
                     <div class="layer">
@@ -136,7 +137,7 @@
                     </div>
                 </div>
             </div>
-            <form action="" method="post">
+            <form action="" method="post" data-aos="zoom-in">
             <a href="./update.html" class="btn" name="more">See More</a>
         
             </form>
@@ -144,10 +145,10 @@
     </div>
     
     <!-------contact section-->
-    <div id="contact">
+    <div id="contact" data-aos="fade-in">
         <div class="container">
             <div class="row">
-                <div class="contact-left">
+                <div class="contact-left" data-aos="fade-right">
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
                     <p><i class="fa-solid fa-phone"></i>0123456789</p>
@@ -157,10 +158,10 @@
                         <a href="https://instagram.com/i_am_debashis08?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://twitter.com/Debashi91537298?t=SnrxhaRx_-nVeN14bbzlkQ&s=08"><i class="fa-brands fa-twitter"></i></a>
                     </div>
-                    <a href="./my resume (2).pdf" download class="btn btn-2">Download CV</a>
+                    <a href="./fullStackWebDeveloperDebashis.pdf" download class="btn btn-2">Download CV</a>
 
                 </div>
-                <div class="contact-right">
+                <div class="contact-right" data-aos="fade-left">
                     <form action="" name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your name" required>
                         <input type="email" name="Email" placeholder="Yoyr Email" required>
@@ -212,6 +213,12 @@
         function loading(){
             load.style.display="none";
         }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:1200,
+      });
     </script>
 </body>
 
